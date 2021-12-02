@@ -1,0 +1,30 @@
+*start-cmd*                                    A command to launch Windows CMD
+------------------------------------------------------------------------------
+vim-start-cmd
+
+Repo: https://github.com/eight04/vim-start-cmd
+Author: eight04 (https://github.com/eight04)
+
+------------------------------------------------------------------------------
+OPTIONS                                                    *start-cmd-options*
+
+                                                         *start-cmd-clear-env*
+g:start_cmd_clear_env  Reset env variables before launching CMD. Default: >
+                         let g:start_cmd_clear_env = ["MYVIMRC", "VIM",
+                         "VIMRUNTIME", "LANG"]
+
+------------------------------------------------------------------------------
+USAGE                                                                   *:Cmd*
+
+:Cmd[!]  Launches CMD from the current file folder. When [!] is added,
+         launches CMD from CWD.
+
+------------------------------------------------------------------------------
+FUNCTIONS                                                *start-cmd-functions*
+                                                                  *StartCmd()*
+StartCmd(from_root = 0)  Launches an external CMD window from the current file
+                         folder. When `from_root` is set to `1` then launces
+                         from CWD.
+
+
+ vim:tw=78:sw=2:ft=help:norl:ai:et

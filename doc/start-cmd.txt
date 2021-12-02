@@ -26,5 +26,4 @@ StartCmd(from_root = 0)  Launches an external CMD window from the current file
                          folder. When `from_root` is set to `1` then launces
                          from CWD.
 
-
  vim:tw=78:sw=2:ft=help:norl:ai:et

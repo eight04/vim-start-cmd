@@ -1,9 +1,9 @@
 *start-cmd*                                    A command to launch Windows CMD
 ------------------------------------------------------------------------------
-vim-start-cmd
+                                vim-start-cmd
 
-Repo: https://github.com/eight04/vim-start-cmd
-Author: eight04 (https://github.com/eight04)
+                Repo: https://github.com/eight04/vim-start-cmd
+                 Author: eight04 (https://github.com/eight04)
 
 ------------------------------------------------------------------------------
 OPTIONS                                                    *start-cmd-options*

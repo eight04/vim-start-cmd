@@ -5,12 +5,18 @@ if !exists("g:start_cmd_clear_env")
 endif
 
 function StartCmd(from_root)
+  let cd_ok = 0
   if !a:from_root
-    cd %:h
+    try
+      cd %:h
+      let cd_ok = 1
+    catch
+      " pass
+    endtry
   endif
   let old_env = s:RemoveEnv(g:start_cmd_clear_env)
   !start cmd
-  if !a:from_root
+  if !a:from_root && cd_ok
     cd -
   endif
   call s:AddEnv(old_env)
